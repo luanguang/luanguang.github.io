@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <style>
+        body{font:12px/1.5 Tahoma;text-align:center;}
+        code,input,button{font-family:inherit;}
+        input{border:1px solid #ccc;padding:3px;}
+        button{cursor:pointer;}
+        </style>
+    </head>
+
+    <body>
+        <p>
+            <input type="text" value="" />
+        </p>
+        <p>
+            <input type="text" value="" />
+        </p>
+        <p>
+            <button>传参</button>
+        </p>
+    </body>
+
+    <script>
+        var myFn = function(a, b) 
+        {
+            alert(a.value);
+            alert(b.value);
+        }
+        window.onload = function () {
+            var oinput = document.getElementsByTagName('input');
+            var obtn = document.getElementsByTagName('button')[0];
+            obtn.onclick = function () {
+                myFn(oinput[0], oinput[1]);
+            }
+        }
+    </script>
+</html>
