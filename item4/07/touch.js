@@ -6,7 +6,7 @@ window.onload = function () {
     var atemp = [];
     function getArray(str)
     {
-        atem.length = 0;
+        atemp.length = 0;
         str = str.split(',');
         for (let i in str) {
             atemp.push(str[i]);
